@@ -41,7 +41,7 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I'm a Software Engineering student with hands-on experience building
+          I&apos;m a Software Engineering student with hands-on experience building
           and launching full-stack web applications. Recognized for developing
           award-winning mental health and accessibility mobile applications.
           Explore my projects and skills below.
