@@ -4,10 +4,13 @@ import React, { useState, useRef, Suspense } from "react";
 import { Canvas, useFrame } from "@react-three/fiber";
 import { Points, PointMaterial, Preload } from "@react-three/drei";
 import * as THREE from "three";
-// @ts-ignore
 import * as random from "maath/random/dist/maath-random.esm";
 
-const StarBackground = (props: any) => {
+interface StarBackgroundProps {
+  [key: string]: unknown;
+}
+
+const StarBackground = (props: StarBackgroundProps) => {
   const ref = useRef<THREE.Points>(null);
   const [sphere] = useState(() => {
     try {
@@ -71,7 +74,7 @@ const StarsCanvas = () => (
   <div className="w-full h-auto fixed inset-0 z-[20]">
     <Canvas
       camera={{ position: [0, 0, 1] }}
-      onError={(error) => console.warn("Three.js Canvas error:", error)}
+      onError={(_error) => console.warn("Three.js Canvas error occurred")}
     >
       <Suspense fallback={null}>
         <StarBackground />
