@@ -58,7 +58,7 @@ export const Skill_data = [
   {
     skill_name: "Node JS",
     category: "language",
-    Image: "/images/skills/html.png",
+    Image: "/images/skills/node.png",
     width: 80,
     height: 80,
   },
