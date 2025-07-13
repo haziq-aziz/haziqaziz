@@ -71,7 +71,7 @@ const StarBackground = (props: StarBackgroundProps) => {
 };
 
 const StarsCanvas = () => (
-  <div className="w-full h-auto fixed inset-0 z-[20]">
+  <div className="w-full h-auto fixed inset-0">
     <Canvas
       camera={{ position: [0, 0, 1] }}
       onError={(_error) => console.warn("Three.js Canvas error occurred")}

@@ -1,6 +1,7 @@
 import { Skill_data } from "@/constants";
 import React from "react";
 import { SkillDataProvider } from "../sub/SkillDataProvider";
+import { SkillText } from "../sub/SkillText";
 
 export const Skills = () => {
   // Filter skills by category
@@ -23,7 +24,7 @@ export const Skills = () => {
       className="flex flex-col items-center justify-center gap-3 h-full relative overflow-hidden py-20"
       style={{ transform: "scale(0.9)" }}
     >
-        
+        <SkillText />
       <div className="flex flex-row justify-around flex-wrap mt-4 gap-5 items-center">
         {languageSkills.map((skill, index) => (
           <SkillDataProvider
