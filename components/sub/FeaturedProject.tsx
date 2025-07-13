@@ -42,7 +42,7 @@ export const FeaturedProject = () => {
         </div>
       </div>
 
-      <div className="relative flex flex-col md:flex-row items-center max-w-6xl w-full">
+      <div className="relative flex flex-col-reverse md:flex-row items-center max-w-6xl w-full">
         <div className="rounded-xl shadow-lg p-4 z-10 relative">
           <Image
             src="/images/projects/Damai.png"
