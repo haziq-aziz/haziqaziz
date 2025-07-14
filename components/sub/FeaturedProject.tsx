@@ -12,9 +12,14 @@ export const FeaturedProject = () => {
             Inter+ - Virtual Private Server Online World
           </p>
           <div className="bg-gray-200/20 rounded-xl shadow-2xl backdrop-blur-lg px-10">
-            <p className="text-gray-300 text-lg mt-5 p-6">
-              A web browser-based virtual online world game allowing players to create and customize their own
-              avatars, socialize with others, and explore a virtual environment with daily avearage of 60 active users and over 3000 users accounts created
+            <p className="text-white text-lg mt-5 p-6">
+              A web browser-based virtual online world game allowing players to
+              create and customize their own avatarswith daily avearage of 60
+              active users and over 3000 users accounts created
+            </p>
+            <p className="text-gray-300 p-6">
+              Tech Invovled: Ubuntu Server, Nginx, MariaDB (MySQL), Java (Server
+              Side), Laravel PHP (Client Side), Cloudflare, Tailwind CSS
             </p>
           </div>
           <div className="flex flex-row mt-4 items-center gap-2 pb-4">
@@ -23,7 +28,7 @@ export const FeaturedProject = () => {
               href="https://instagram.com/inter_rasmi"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-purple-400 underline hover:text-purple-600 transition-colors cursor-pointer"
+              className="text-cyan-400 underline hover:text-cyan-600 transition-colors cursor-pointer"
             >
               https://interplus.my
             </a>
@@ -60,11 +65,14 @@ export const FeaturedProject = () => {
             Damai - A Gamified Mobile Mental Health App with Admin Web Portal
           </p>
           <div className="bg-gray-200/20 rounded-xl shadow-2xl backdrop-blur-lg px-10">
-            <p className="text-gray-300 text-lg mt-5 p-6 text-right">
-              A mobile app for students to track moods, journal, and complete
+            <p className="text-white text-lg mt-5 p-6 text-right">
+              A cross platform (iOS and Android) mobile app for students to track moods, journal, and complete
               self-care routines — with points, streaks, and badges to gamify
               mental wellness. Includes an admin web portal for content and user
               management
+            </p>
+            <p className="text-gray-300 p-6">
+              Tech Invovled: Typescript, React Native, Expo, Firebase, Node.js, React.js, Next.js, Nativewind CSS
             </p>
           </div>
           <div className="flex justify-end">
@@ -73,7 +81,7 @@ export const FeaturedProject = () => {
                 href="https://github.com/haziq-aziz/damai-application"
                 target="_blank"
                 rel="noopener noreferrer"
-                className="text-purple-400 underline hover:text-purple-600 transition-colors cursor-pointer"
+                className="text-cyan-400 underline hover:text-cyan-600 transition-colors cursor-pointer"
               >
                 https://github.com/haziq-aziz/damai-application
               </a>
