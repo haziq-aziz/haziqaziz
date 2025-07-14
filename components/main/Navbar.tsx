@@ -5,11 +5,11 @@ import Image from "next/image";
 import React, { useState, useEffect } from "react";
 
 export const Navbar = () => {
-  const [activeSection, setActiveSection] = useState("about-me");
+  const [activeSection, setActiveSection] = useState("home");
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ["about-me", "skills", "projects", "achievements"];
+      const sections = ["home", "skills", "projects", "achievements"];
       const scrollPosition = window.scrollY + 100;
 
       for (const section of sections) {
@@ -43,28 +43,25 @@ export const Navbar = () => {
   ];
 
   return (
-    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-10">
-      <div className="w-full h-full flex flex-row items-center justify-between m-auto px-[10px]">
-        <a
-          href="#home"
-          className="h-auto w-auto flex flex-row items-center"
-        >
+    <div className="w-full h-[65px] fixed top-0 shadow-lg shadow-[#2A0E61]/50 bg-[#03001417] backdrop-blur-md z-50 px-2 md:px-10">
+      <div className="w-full h-full flex flex-row items-center justify-between m-auto">
+        <a href="#home" className="h-auto w-auto flex flex-row items-center">
           <Image
             src="/images/nav/NavLogo.png"
             alt="logo"
-            width={110}
-            height={70}
-            className="cursor-pointer hidden md:block ml-[30px]"
+            width={70}
+            height={45}
+            className="cursor-pointer md:w-[110px] md:h-auto"
           />
         </a>
 
-        <div className="w-[500px] h-full flex flex-row items-center justify-between md:mr-20">
-          <div className="flex items-center justify-between w-full h-auto border border-[#7042f861] bg-[#0300145e] backdrop-blur-xl mr-[15px] px-[20px] py-[10px] rounded-full text-gray-200 shadow-lg">
+        <div className="flex-1 h-full flex flex-row items-center justify-center md:justify-end md:mr-20">
+          <div className="flex items-center justify-between w-full max-w-[90%] md:max-w-[500px] h-auto border border-[#7042f861] bg-[#0300145e] backdrop-blur-xl px-2 md:px-[20px] py-[10px] rounded-full text-gray-200 shadow-lg">
             {navItems.map((item) => (
               <a
                 key={item.id}
                 href={item.href}
-                className={`cursor-pointer px-3 py-2 rounded-full transition-all duration-300 relative overflow-hidden ${
+                className={`cursor-pointer px-1 md:px-3 py-2 rounded-full transition-all duration-300 relative overflow-hidden text-xs md:text-sm ${
                   activeSection === item.id
                     ? "text-white bg-white/20 backdrop-blur-md shadow-md"
                     : "hover:text-white hover:bg-white/10 hover:backdrop-blur-sm"
@@ -78,8 +75,6 @@ export const Navbar = () => {
             ))}
           </div>
         </div>
-
-        <div className="flex flex-row gap-5"></div>
       </div>
     </div>
   );
