@@ -1,10 +1,15 @@
-"use client"
+"use client";
 
-import React from 'react'
-import { motion } from 'framer-motion'
-import { slideInFromTop, slideInFromLeft, slideInFromRight } from '@/utils/motion'
-import { SparklesIcon } from '@heroicons/react/24/solid'
-import Image from 'next/image'
+import React from "react";
+import { motion } from "framer-motion";
+import {
+  slideInFromTop,
+  slideInFromLeft,
+  slideInFromRight,
+} from "@/utils/motion";
+import { SparklesIcon } from "@heroicons/react/24/solid";
+import { DocumentTextIcon } from "@heroicons/react/24/outline";
+import Image from "next/image";
 
 export const HeroContent = () => {
   return (
@@ -41,16 +46,18 @@ export const HeroContent = () => {
           variants={slideInFromLeft(0.8)}
           className="text-lg text-gray-400 my-5 max-w-[600px]"
         >
-          I&apos;m a Software Engineering student with hands-on experience building
-          and launching full-stack web applications. Recognized for developing
-          award-winning mental health and accessibility mobile applications.
-          Explore my projects and skills below.
+          I&apos;m a Software Engineering student with hands-on experience
+          building and launching full-stack web applications. Recognized for
+          developing award-winning mental health and accessibility mobile
+          applications. Explore my projects and skills below.
         </motion.p>
         <motion.a
           variants={slideInFromLeft(1)}
-          className="py-2 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px]"
+          href="/CV_AhmadHaziq.pdf"
+          download="CV_AhmadHaziq.pdf"
+          className="p-4 button-primary text-center text-white cursor-pointer rounded-lg max-w-[200px] inline-flex items-center justify-center"
         >
-          Learn More!
+          Download CV <DocumentTextIcon className="h-5 w-5 inline-block ml-2" />
         </motion.a>
       </div>
       <motion.div
@@ -66,4 +73,4 @@ export const HeroContent = () => {
       </motion.div>
     </motion.div>
   );
-}
+};

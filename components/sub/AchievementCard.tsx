@@ -42,7 +42,7 @@ export const AchievementCard = () => {
               />
             </div>
             <div className="mx-4 my-2 flex-1 md:w-2/3">
-              <h2 className="text-purple-500 text-xl font-semibold mb-4">
+              <h2 className="text-cyan-500 text-xl font-semibold mb-4">
                 ASIA IMPACT HACKATHON 2025 Excellence Award
               </h2>
               <br />
