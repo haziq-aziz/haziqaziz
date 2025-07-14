@@ -18,7 +18,7 @@ export const FeaturedProject = () => {
               active users and over 3000 users accounts created
             </p>
             <p className="text-gray-300 p-6">
-              Tech Invovled: Ubuntu Server, Nginx, MariaDB (MySQL), Java (Server
+              Tech: Ubuntu Server, Nginx, MariaDB (MySQL), Java (Server
               Side), Laravel PHP (Client Side), Cloudflare, Tailwind CSS
             </p>
           </div>
@@ -72,7 +72,7 @@ export const FeaturedProject = () => {
               management
             </p>
             <p className="text-gray-300 p-6">
-              Tech Invovled: Typescript, React Native, Expo, Firebase, Node.js, React.js, Next.js, Nativewind CSS
+              Tech: Typescript, React Native, Expo, Firebase, Node.js, React.js, Next.js, Nativewind CSS
             </p>
           </div>
           <div className="flex justify-end">
